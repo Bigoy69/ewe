@@ -39,7 +39,7 @@ training_comment = ""
 xformers = true
 
 ###### steps and epochs ######
-max_train_epochs = 39
+max_train_epochs = 40
 save_every_n_epochs = 12
 
 ###### loss function ######
@@ -72,6 +72,6 @@ network_dropout = 0
 caption_dropout_rate = 0
 clip_skip = 1
 max_timestep = 1000
-min_snr_gamma = 7
+min_snr_gamma = 5
 scale_weight_norms = 5
 seed = 2951032222
