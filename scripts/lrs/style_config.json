@@ -6,7 +6,7 @@
             "optimizer_args": [
                 "betas=(0.9, 0.999)",
                 "weight_decay=1e-03",
-                "eps=1e-08"
+                "eps=1e-06"
             ],
             "unet_lr": 0.0000411,
             "text_encoder_lr": 0.0000411,
@@ -20,7 +20,7 @@
             "optimizer_args": [
                 "betas=(0.9, 0.999)",
                 "weight_decay=3e-04",
-                "eps=1e-08"
+                "eps=1e-06"
             ],
             "unet_lr": 5e-5,
             "text_encoder_lr": 5e-6,
@@ -33,7 +33,7 @@
             "optimizer_args": [
                 "betas=(0.9, 0.999)",
                 "weight_decay=1e-03",
-                "eps=1e-08"
+                "eps=1e-06"
             ],
             "unet_lr": 0.0000411,
             "text_encoder_lr": 0.0000411,
@@ -52,7 +52,7 @@
             "optimizer_args": [
                 "betas=(0.9, 0.999)",
                 "weight_decay=1e-03",
-                "eps=1e-08"
+                "eps=1e-06"
             ],
             "unet_lr": 0.0000411,
             "text_encoder_lr": 0.0000411,
@@ -63,7 +63,7 @@
             "optimizer_args": [
                 "betas=(0.9, 0.999)",
                 "weight_decay=1e-03",
-                "eps=1e-08"
+                "eps=1e-06"
             ],
             "unet_lr": 0.0000411,
             "text_encoder_lr": 0.0000411,
@@ -85,7 +85,7 @@
             "optimizer_args": [
                 "betas=(0.9, 0.999)",
                 "weight_decay=1e-03",
-                "eps=1e-08"
+                "eps=1e-06"
             ],
             "noise_offset": 0.0411
         },
@@ -119,7 +119,7 @@
             "optimizer_args": [
                 "betas=(0.9, 0.999)",
                 "weight_decay=1e-03",
-                "eps=1e-08"
+                "eps=1e-06"
             ],
             "unet_lr": 0.0000411,
             "text_encoder_lr": 0.0000411,
@@ -143,7 +143,7 @@
             "optimizer_args": [
                 "betas=(0.9, 0.999)",
                 "weight_decay=5e-04",
-                "eps=1e-08"
+                "eps=1e-06"
             ],
             "unet_lr": 2.5e-5,
             "text_encoder_lr": 2.5e-6,
@@ -156,7 +156,7 @@
             "optimizer_args": [
                 "betas=(0.9, 0.999)",
                 "weight_decay=1e-03",
-                "eps=1e-08"
+                "eps=1e-06"
             ],
             "unet_lr": 0.0000411,
             "text_encoder_lr": 0.0000411,
@@ -167,7 +167,7 @@
             "optimizer_args": [
                 "betas=(0.9, 0.999)",
                 "weight_decay=1e-03",
-                "eps=1e-08"
+                "eps=1e-06"
             ],
             "unet_lr": 0.0000411,
             "text_encoder_lr": 0.0000411,
@@ -178,7 +178,7 @@
             "optimizer_args": [
                 "betas=(0.9, 0.999)",
                 "weight_decay=1e-03",
-                "eps=1e-08"
+                "eps=1e-06"
             ],
             "unet_lr": 0.0000411,
             "text_encoder_lr": 0.0000411,
