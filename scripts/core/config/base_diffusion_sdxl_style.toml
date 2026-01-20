@@ -39,39 +39,42 @@ training_comment = ""
 xformers = true
 
 ###### steps and epochs ######
-max_train_epochs = 42
-save_every_n_epochs = 12
+max_train_epochs = 60
+save_every_n_epochs = 15
 
 ###### loss function ######
-loss_type = "l2"
+loss_type = "huber"
+huber_schedule = "snr"
+huber_c = 0.02
+huber_scale = 0.5
 
 ###### batch size ######
-train_batch_size = 4
+train_batch_size = 6
 gradient_accumulation_steps = 1
 
 ###### optimizer ######
-optimizer_type = "adamw"
-optimizer_args = [ "betas=(0.9, 0.999)", "weight_decay=1e-03", "eps=1e-08",]
-unet_lr = 0.0000411
-text_encoder_lr = 0.0000411
+optimizer_type = "prodigy"
+optimizer_args = ["decouple=True", "d_coef=1.8", "weight_decay=0.0", "use_bias_correction=True", "safeguard_warmup=True"]
+unet_lr = 1.0
+text_encoder_lr = 1.0
 
 ###### lr scheduler ######
-lr_scheduler = "cosine"
-lr_warmup_steps = 25
+lr_scheduler = "constant"
 
 ###### noise offset ######
-noise_offset_type = "Original"
-noise_offset = 0.0411
+noise_offset = 0.0
 
 ###### misc ######
-network_alpha = -1
-network_dim = -1
+network_alpha = 256
+network_dim = 256
 network_module = "networks.lora"
 network_args = []
 network_dropout = 0
 caption_dropout_rate = 0
 clip_skip = 1
 max_timestep = 1000
-min_snr_gamma = 7
-scale_weight_norms = 5
+min_snr_gamma = 3
+scale_weight_norms = 0
+max_grad_norm = 0.5
+prior_loss_weight = 0.0
 seed = 2951032222

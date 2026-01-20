@@ -25,25 +25,28 @@ huggingface_repo_id = ""
 huggingface_repo_type = "model"
 huggingface_repo_visibility = "public"
 huggingface_token = ""                                                                                                                                                         
-loss_type = "l2"                                                                                                                                                               
-lr_scheduler = "cosine"                                                                                                                                                      
+loss_type = "huber"
+huber_schedule = "snr"
+huber_c = 0.03
+huber_scale = 0.6
+lr_scheduler = "constant"                                                                                                                                                      
 lr_scheduler_args = []                                                                                                                                                         
 lr_scheduler_num_cycles = 1                                                                                                                                                    
 lr_scheduler_power = 1                                                                                                                                                         
 max_bucket_reso = 2048                                                                                                                                                         
 max_data_loader_n_workers = 0                                                                                                                                                  
 max_timestep = 1000                                                                                                                                                            
-max_train_steps = 350                                                                                                                                      
+max_train_steps = 500                                                                                                                                      
 mem_eff_save = true                                                                                                                                                            
 min_bucket_reso = 256                                                                                                                                                          
 mixed_precision = "bf16"                                                                                                                                                       
 model_prediction_type = "raw"                                                                                                                                                  
-network_alpha = 128                                                                                                                                                            
-network_args = [ "train_double_block_indices=all", "train_single_block_indices=all", "train_t5xxl=True",]                                                                      
-network_dim = 128                                                                                                                                                              
+network_alpha = 256
+network_args = [ "train_double_block_indices=all", "train_single_block_indices=all", "train_t5xxl=True",]
+network_dim = 256                                                                                                                                                              
 network_module = "networks.lora_flux"                                                                                                                                          
 noise_offset_type = "Original"                                                                                                                                                 
-optimizer_args = ["weight_decay=0.01", "betas=(0.9,0.99)"]                                                                  
+optimizer_args = ["weight_decay=0.0", "betas=(0.9,0.99)"]                                                                  
 optimizer_type = "Lion"                                                                                                                                                   
 output_dir = "/app/outputs"                                                                                                                                          
 output_name = "last"                                                                                                                                                 
