@@ -44,7 +44,7 @@
             "unet_lr": 3e-5,
             "text_encoder_lr": 3e-6,
             "noise_offset": 0.0411,
-            "lr_warmup_steps": 20,
+            "lr_warmup_steps": 0,
             "min_snr_gamma": 1
         },
         "756995ded1a0cd274a3cf4bdb5df47926993806cc19bed0a808a4a211545ab95": {
@@ -75,7 +75,7 @@
             "text_encoder_lr": 3e-6,
             "noise_offset": 0.0411,
             "min_snr_gamma": 1,
-            "lr_warmup_steps": 20,
+            "lr_warmup_steps": 0,
             "seed": 2951032221
         },
         "a39c9825466ea06cd71c5db75963783dba07b2d2a02b9aac21452c3762493c8f": {
@@ -93,7 +93,7 @@
             "max_train_epochs": 42,
             "unet_lr": 3e-5,
             "text_encoder_lr": 3e-6,
-            "lr_warmup_steps": 20,
+            "lr_warmup_steps": 0,
             "noise_offset": 0.0411,
             "min_snr_gamma": 1
         },
@@ -101,7 +101,7 @@
             "max_train_epochs": 42,
             "unet_lr": 3e-5,
             "text_encoder_lr": 3e-6,
-            "lr_warmup_steps": 20,
+            "lr_warmup_steps": 0,
             "noise_offset": 0.0411,
             "min_snr_gamma": 1
         },
@@ -109,7 +109,7 @@
             "max_train_epochs": 42,
             "unet_lr": 3e-5,
             "text_encoder_lr": 3e-6,
-            "lr_warmup_steps": 20,
+            "lr_warmup_steps": 0,
             "noise_offset": 0.0411,
             "min_snr_gamma": 1
         },
@@ -129,7 +129,7 @@
             "max_train_epochs": 42,
             "unet_lr": 3e-5,
             "text_encoder_lr": 3e-6,
-            "lr_warmup_steps": 20,
+            "lr_warmup_steps": 0,
             "noise_offset": 0.0411,
             "min_snr_gamma": 1
         },
